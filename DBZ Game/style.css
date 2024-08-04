@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.game{
+    background-image: url(images/Tournament\ of\ Power.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.gokudead{
+    background-image: url(images/gokudead.png);
+    width: 175px;
+    height: 260px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    visibility: hidden;
+}
+
+
+.goku{
+    background-image: url(images/goku.png);
+    width: 170px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+
+.h1{
+    text-align: center;
+    font-family: Arial, Helvetica, ;
+    padding-top: 30px;
+    color: white;
+    text-shadow: 0px 0px 8px aqua
+}
+
+.AnimatedGoku{
+    animation: goku 0.6s linear;
+}
+
+@keyframes goku{
+    0%{
+        bottom: 0;
+    }
+
+    50%{
+        bottom: 400px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+.vegeta{
+    background-image: url(images/vegeta\ \(1\).png);
+    width: 205px;
+    height: 285px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+
+.fire{
+
+    background-image: url(images/fire.png);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0 ;
+    right: 0;
+    margin-bottom: 100px;
+    margin-right: 110px;
+}
+
+.fireani{
+    animation: fireani 4s linear infinite;
+}
+
+@keyframes fireani{
+    0%{
+        left: 83vw;
+    }
+
+    100%{
+        left: -100vw;
+    }
+
+}
+
+.GameOver{
+    visibility: hidden;
+    position: relative;
+    font-size: 80px;
+    font-family: cursive;
+    color: rgb(250, 51, 51) ;
+    animation: fadein 10s;
+    text-shadow: black 7px 7px 7px;
+    font-weight: bold;
+    text-align: center;    
+    top: 40px;
+}
+
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+#scorecount{
+    
+    position: relative;
+    text-align: center;
+    top: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    /* background-color: aqua; */
+    /* border-radius: 20px; */
+    color: rgb(0, 200, 255);
+    text-shadow: 2px 2px 5px black ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
